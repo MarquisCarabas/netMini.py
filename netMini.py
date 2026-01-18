@@ -98,7 +98,7 @@ class SlidingWindow:
         return out
 
 # [PHASE 3] Helper functions for enhanced report analysis
-def classify_scan_type(ports) -> str:
+def classify_scan_type(ports):
     """[REQ: functions] Classify horizontal vs vertical scan based on port patterns."""
     unique = len(set(ports))
     total = len(ports)
@@ -131,7 +131,7 @@ def generate_timeline_ascii(rows):
 
 # [REQ: file handling] Write an enhanced HTML report with Phase 3 features
 def write_report(rows, outdir="reports"):
-    """[REQ: functions] [PHASE 3] Writes comprehensive HTML with executive summary, stats, graphs, and recommendations."""
+    """[REQ: functions] [PHASE 3 ENHANCED] Writes comprehensive HTML with executive summary, stats, graphs, and recommendations."""
     os.makedirs(outdir, exist_ok=True)
     path = os.path.join(outdir, f"report_{int(time.time())}.html")
     
